@@ -17,7 +17,7 @@ import { RetrievalQAChain } from "langchain/chains";
 export default {
     async fetch(request, env, ctx) {
         const loader = new CheerioWebBaseLoader(
-            "https://en.wikipedia.org/wiki/Brooklyn"
+            "https://docs.tecton.ai/docs/applying-feature-repository-changes-to-a-workspace"
         );
         const docs = await loader.loadAndSplit();
         console.log(docs);
